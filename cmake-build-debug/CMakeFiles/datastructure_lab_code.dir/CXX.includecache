@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/WorkSpace/lab/datastructure_lab_code/code3/BubbleSort.cpp
+BubbleSort.h
+D:/WorkSpace/lab/datastructure_lab_code/code3/BubbleSort.h
+
+D:/WorkSpace/lab/datastructure_lab_code/code3/BubbleSort.h
+iostream
+-
+conio.h
+-
+
