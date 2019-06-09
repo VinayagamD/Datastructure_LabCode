@@ -11,17 +11,19 @@ void swap(int *xp, int *yp) {
 }
 
 void bubbleSort(int arr[], int size) {
-    for(int i=0 ;i<size-1;i++){
-        for(int j=0;j<size-i-1;i++){
-            if(arr[j] > arr[j+1]){
-                swap(&arr[j],&arr[j+1]);
+    for(int i=0 ;i < size-1;i++){
+        for(int j=0; j < size-i-1;j++){
+            if(arr[j] > arr[j+1]) {
+                swap(&arr[j] , &arr[j + 1]);
             }
         }
+        cout << "Step : " << i <<endl;
+        printArray(arr,size);
     }
 }
 
 void printArray(int arr[], int size) {
-    for(int i; i< size; i++){
+    for(int i=0; i < size; i++){
         cout<<arr[i] << "\t";
     }
     cout << endl;
@@ -46,7 +48,9 @@ int main(){
     readArray(arr,size);
     cout << "Array before sorting the element"<<endl;
     printArray(arr, size);
+    cout << "Array while sorting the element"<<endl;
     bubbleSort(arr,size);
+    cout << "Array ending sorting the element"<<endl;
     cout << "\n____________________________________________\n";
     cout << "Array after sorting the element using bubble sort"<<endl;
     printArray(arr,size);
